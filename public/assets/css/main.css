@@ -1,0 +1,87 @@
+*{
+    font-family: "Urbanist", sans-serif;
+}
+
+:root{
+    --urbanist: "Urbanist", sans-serif;
+    --poppins: "Poppins", sans-serif;
+    --public-sans: "Public Sans", sans-serif;
+
+    --dark-red: #5e0000;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+.page--layout{
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100rem;
+    padding: 0 13px;
+}
+
+
+
+/* Main Header Start */
+.app-header{
+    width: 100%;
+    background-color: #5e0000;
+    background: linear-gradient(
+        0deg,
+        #5e0000,
+        #7c0000
+    );
+    position: fixed;
+}.app-header .app-header__body{
+    max-width: 1440px;
+    height: 4rem;
+    margin: 0 auto;
+    padding: 0 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}.app-header .app-header__body .app-logo{
+    color: #fff;
+    font-size: 21px !important;
+    letter-spacing: 5%;
+    margin: 0;
+}.app-header .app-header__body ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: 0;
+}.app-header .app-header__body li{
+    list-style: none;
+   margin: 0;
+}.app-header .app-header__body a{
+    margin: 0;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: var(--poppins);
+    
+}.app-header .app-header__body a:hover{
+    opacity: .9;
+}.app-header .app-header__body .contact-btn{
+    border: 1px solid #fff;
+    border-radius: 20rem;
+    background-color: transparent;
+    color: #FFF;
+    font-size: 15px;
+    padding: 4px 1.5rem;
+    cursor: pointer;
+}.app-header .app-header__body .contact-btn:hover{
+    background-color: #fff;
+    color: #5e0000;
+}
+/* Main Header End */
+
+/* Main Content Start */
+.app-content{
+    padding-top: 4rem;
+}
+/* Main Content End */
