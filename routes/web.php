@@ -8,7 +8,6 @@ use App\Http\Controllers\JoblistController;
 */
 Route::view('/', 'websites.home')->name('home');
 Route::view('/about', 'websites.about')->name('about');
-Route::view('/news', 'websites.news')->name('news');
 Route::view('/contact', 'websites.contact')->name('contact');
 
 /*
@@ -16,3 +15,6 @@ Route::view('/contact', 'websites.contact')->name('contact');
 */
 Route::get('/jobs', [JoblistController::class, 'index'])->name('jobs');
 Route::get('/jobs/{title}', [JoblistController::class, 'show']);
+
+Route::get('/news', 'App\Http\Controllers\NewsController@index')->name('news');
+Route::get('/news/{title}', 'App\Http\Controllers\NewsController@show');
