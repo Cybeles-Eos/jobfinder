@@ -10,4 +10,9 @@ class Joblist extends Model
     use HasFactory;
     protected $table = 'joblists';
     protected $fillable = ['title', 'description', 'salary'];
+
+    public function employer()
+    {
+        return $this->belongsTo(Employer::class);
+    }
 }

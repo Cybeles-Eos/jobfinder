@@ -3,7 +3,7 @@
 
     <article class="joblist--page page--layout">
         <h1>Job List</h1>
-        <ul>
+        <ul class="ps-0">
         @foreach($jobs as $job)
             <li><a href="{{ url('jobs/' . $job->title) }}">{{ $job->title }}</a></li>
         @endforeach
