@@ -15,4 +15,8 @@ class News extends Model
     protected function comment(){
         return $this->belongsTo(Comment::class);
     }
+
+    public function joblist(){
+        return $this->belongsToMany(Joblist::class);
+    }
 }
